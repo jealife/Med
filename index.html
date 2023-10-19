@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta property="og:title" content="Med + Med Page" />
     <!-- Meta description -->
-    <meta name="description"
-        content="Med + Med a simple hero with tailwindPage " />
+    <meta name="description" content="Med + Med a simple hero with tailwindPage " />
     <!-- mots clés -->
     <meta name="keywords" content="Voiture, Auto, mécanicien à domicile" />
     <meta name="author" content="JEaLiFe" />
@@ -15,13 +14,13 @@
     <!-- image mise en avant -->
     <meta property="og:image"
         content="https://images.unsplash.com/photo-1679967489553-f483a8f7bd56?auto=format&fit=crop&q=80&w=2128&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Assets/styles/main.css">
     <title>Hero Mask</title>
     <style>
         .mask1 {
-            
+
             -webkit-mask-image: linear-gradient(black, transparent);
             -webkit-mask-repeat: no-repeat;
             -webkit-mask-size: cover;
@@ -32,8 +31,8 @@
             mask-size: contain;
             mask-position: center;
         }
-        
-        .hero-image{
+
+        .hero-image {
             background-image: url(Assets/images/mehrab-sium-5AOb1lDZfk4-unsplash.jpg);
             background-image: url(Assets/images/AdobeStock_593168662.jpeg);
             background-position: center;
@@ -45,15 +44,18 @@
 
 <body>
     <header class="fixed absolute top-0 z-50 w-full ">
-        <nav class="nav lg:pt-14 py-8  lg:px-14 px-8 flex justify-between  lg:backdrop-blur-0  backdrop-blur-xl  lg:bg-white/0 bg-white/25  ">
+        <nav
+            class="nav lg:pt-14 py-8  lg:px-14 px-8 flex justify-between  lg:backdrop-blur-0  backdrop-blur-xl  lg:bg-white/0 bg-white/25  ">
             <div class="logo">
-                <span class="text-gray-900 font-bold">Med + Med</span>
+                <a href="#">
+                    <span class="text-blue-600 font-bold">Med + Med</span>
+                </a>
             </div>
             <div class="menu">
                 <div class="links-items flex gap-3">
-                    <a href="#">About Us</a>
-                    <a href="#">Procedures </a>
-                    <a href="#">reviews</a>
+                    <a class="hover:text-blue-600 duration-3" href="#">About Us</a>
+                    <a class="hover:text-blue-600 duration-3" href="#">Procedures </a>
+                    <a class="hover:text-blue-600 duration-3" href="#">reviews</a>
                 </div>
             </div>
         </nav>
@@ -61,35 +63,45 @@
     <main>
         <section class="hero-section relative flex flex-col items-center lg:px-8 lg:pb-8">
             <div class="hero-content w-full relative  ">
-                <div class="hero-image mask1 absolute lg:top-8 top-0 right-0  h-[700px]  w-full lg:rounded-3xl rounded-none flex  items-center ">
+                <div
+                    class="hero-image mask1 absolute lg:top-8 top-0 right-0  h-[700px]  w-full lg:rounded-3xl rounded-none flex  items-center ">
                 </div>
-                <div class="content h-max mt-24  w-full  flex flex-col gap-6 items-center px-5 py-24 text-center justify-center   relative -">
-                    <h1 class="lg:text-8xl text-5xl font-bold lg:text-gray-700 text-slate-700 "> <span class="text-blue-600">Med</span> <span class="text-white">+</span>  <span class="text-fuchsia-500">Med</span> </h1>
-                    <p class="text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, adipisci!</p>
+                <div
+                    class="content h-max mt-24  w-full  flex flex-col gap-6 items-center px-5 py-24 text-center justify-center   relative -">
+                    <h1 class="lg:text-8xl text-5xl font-bold lg:text-gray-700 text-slate-700 "> <span
+                            class="text-blue-600">Med</span> <span class="text-gray-400">+</span> <span
+                            class="text-fuchsia-500">Med</span> </h1>
+                    <p class="text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, adipisci!
+                    </p>
                     <div class="search sticky">
                         <div class="search-strock p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl">
-                            <input class="p-3 rounded-xl lg:w-96 w-64 focus:outline-2 focus:outline-pink-200   outline-offset-2 " type="search" name="search" id="search" placeholder="Search">
+                            <input
+                                class="p-3 rounded-xl lg:w-96 w-64 focus:outline-2 focus:outline-pink-200   outline-offset-2 "
+                                type="search" name="search" id="search" placeholder="Search">
                         </div>
                     </div>
-            </div>
-            <div class="blocks flex items-center justify-center relative mt-8">
-                <div class="block-items grid lg:grid-cols-3 gap-8">
-                    <div class="block p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl ">
-                        <img class="w-[300px] h-[300px]  object-cover  rounded-xl" src="Assets/images/daniels-joffe--SmCKTIcH5E-unsplash.jpg" alt="">
-    
-                    </div>
-                    <div class="block p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl ">
-                        <img class="w-[300px] h-[300px]  object-cover  rounded-xl" src="Assets/images/AdobeStock_593168662.jpeg" alt="">
-                        
-                    </div>
-                    
-                    <div class="block p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl ">
-                        <img class="w-[300px] h-[300px]  object-cover  rounded-xl" src="Assets/images/mo-nm8b-BUnzuk-unsplash.jpg" alt="">
-    
+                </div>
+                <div class="blocks flex items-center justify-center relative mt-8">
+                    <div class="block-items grid lg:grid-cols-3 gap-8">
+                        <div class="block p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl ">
+                            <img class="w-[300px] h-[300px]  object-cover  rounded-xl"
+                                src="Assets/images/daniels-joffe--SmCKTIcH5E-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="block p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl ">
+                            <img class="w-[300px] h-[300px]  object-cover  rounded-xl"
+                                src="Assets/images/AdobeStock_593168662.jpeg" alt="">
+
+                        </div>
+
+                        <div class="block p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl ">
+                            <img class="w-[300px] h-[300px]  object-cover  rounded-xl"
+                                src="Assets/images/mo-nm8b-BUnzuk-unsplash.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
     </main>
 </body>
